@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+</head>
+<body>
+   <h1>Survey Form</h1>
+   <p>Hello there! <br>Today we're gonna turn things around and get to know things about you. please fill out the form</p>
+   
+    <form id="registration form" action="https://formsubmit.co/chukwumaangeliruoma@gmail.com"
+    method="post" enctype="multipart/form-data" target="_blank">
+    <input type="hidden" name="_captcha" value="true">
+    <input type="hidden" name="_next" value="http://127.0.0.1:5500/feedback.html">
+
+    <div>
+        <label for="name" id="label-name">Name</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required >
+    </div>
+
+    <div>
+        <label for="email" id="label-email">Email</label><br>
+        <input type="email" id="email" placeholder="Enter your email" required >
+    </div>
+
+    <div>
+        <label for="phone number" id="label-phone number">phone number</label><br>
+        <input type="phone number" id="phone number" name="phone number" placeholder="Enter your phone number" required>
+    </div>
+
+    <div>
+        <label>How do you think i'm doing in my asignmeent</label><br>
+        <input type="radio" id="recommend" value="Good">Good<br>
+        <input type="radio" id="recommend" value="Great">Great<br>
+        <input type="radio" id="recommend" value="Needs work">Needs work<br>
+    </div>
+
+    <div>
+        <label>I want to know your favourite kinds of meat
+            <small>(check all that apply)</small>
+        </label><br>
+        <label><input type="checkbox" name="meat" value="pork">pork</label>
+         <label><input type="checkbox" name="meat" value="beef">beef</label>
+          <label><input type="checkbox" name="meat" value="lamb">lamb</label>
+           <label><input type="checkbox" name="meat" value="goat">Javascript</label>
+    </div>
+
+    <div>
+        <label for="role" id="label-role">what's your role in this upskill program</label><br>
+        <select id="role" name="role" required>
+            <option value=""disabled selected>role</option>
+            <option value="facilitator">facilitator</option>
+            <option value="mentor">mentor</option>
+            <option value="assignment evaluator">assignment evaluator</option>
+            <option value="all of the above">all of the above</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="comments" id="label-comment">Any comment or suggestions</label><br>
+        <textarea name="comments" id="comments" row="4" cols="20" placeholder="Enter your comment or suggestionns"></textarea>
+    </div>
+    <div>
+        <button type="submit" id="submit">submit</button>
+    </div>
+    </form>
+</body>
+</html>
